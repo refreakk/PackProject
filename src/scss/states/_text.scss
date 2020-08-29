@@ -1,0 +1,19 @@
+.text{
+	&-center{
+		text-align: center;
+	}
+	&-right{
+		text-align: right;
+	}
+	&-left{
+		text-align: left;
+	}
+}
+.tt{
+	&-uppercase{
+		text-transform: uppercase;
+	}
+	&-inherit{
+		text-transform: inherit;
+	}
+}

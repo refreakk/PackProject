@@ -1,0 +1,26 @@
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .5), // 5px // *10
+    2: $spacer, // 10px -- 1 rem
+    3: ($spacer * 9.5), // 95px
+    4: ($spacer * 3), // 30 px
+    5: ($spacer * 6.5), // 65 px
+    6: ($spacer * 2.5), // 25 px
+    7: ($spacer * 3.5), // 25 px
+    8: ($spacer * 1.5), // 15 px
+    9: ($spacer * 2), // 20 px
+    10: ($spacer * 3.5), // 35 px
+    11: ($spacer * 5), // 50px
+    12: ($spacer * 4), // 40px
+    13: ($spacer * 4.5), // 45px
+    14: ($spacer * 8.5), // 85px
+    15: ($spacer * 0.3), // 
+    16: ($spacer * 16.4), // 
+    17: ($spacer * 8), // 
+    18: ($spacer * 0.25),
+  ),
+  $spacers
+);

@@ -1,0 +1,43 @@
+// FONT-FAMILY
+
+@include each-property($font-families, font-family);
+
+// FONT-WEIGHT
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+    	$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    	.fs#{$infix}-12 {font-size: rem(12);}
+		.fs#{$infix}-14 {font-size: rem(14);}
+		.fs#{$infix}-16 {font-size: rem(16);}
+		.fs#{$infix}-18 {font-size: rem(18);}
+		.fs#{$infix}-20 {font-size: rem(20);}
+		.fs#{$infix}-22 {font-size: rem(22);}
+		.fs#{$infix}-24 {font-size: rem(24);}
+		.fs#{$infix}-30 {font-size: rem(30);}
+		.fs#{$infix}-35 {font-size: rem(35);}
+		.fs#{$infix}-40 {font-size: rem(40);}
+		.fs#{$infix}-45 {font-size: rem(45);}
+		.fs#{$infix}-50 {font-size: rem(50);}
+		.fs#{$infix}-55 {font-size: rem(55);}
+		.fs#{$infix}-60 {font-size: rem(60);}
+		.fs#{$infix}-65 {font-size: rem(65);}
+	}
+}
+
+.font-weight{
+	&-700{
+		font-weight: bold;
+	}
+	&-600{
+		font-weight: 600;
+	}
+	&-500{
+		font-weight: 500;
+	}
+	&-400{
+		font-weight: 400;
+	}
+	&-300 {
+		font-weight: 300;
+	}
+}
